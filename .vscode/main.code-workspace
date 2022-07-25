@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "iot_project",
+			"path": "../../../../Documents/PlatformIO/Projects/iot_project"
+		},
+		{
+			"name": "iot_project",
+			"path": "../iot_project"
+		}
+	],
+	"settings": {}
+}

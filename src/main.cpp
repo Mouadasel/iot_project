@@ -1,14 +1,19 @@
 #include <Arduino.h>
+#include<DHT.h>
+#include<DHT_U.h>
+
+
+
 int red=14;
 int green=26;
-int yellow=13;
+int bleu=13;
 
 
 void setup() {
   // put your setup code here, to run once:
 pinMode(red,OUTPUT);
 pinMode(green,OUTPUT);
-pinMode(yellow,OUTPUT);
+pinMode(bleu,OUTPUT);
 Serial.begin(9600);
 Serial.print("setup\n");
 }
@@ -18,12 +23,12 @@ void loop() {
 
   // put your main code here, to run repeatedly:
 digitalWrite(red,HIGH);
-digitalWrite(yellow,LOW);
+digitalWrite(bleu,LOW);
 delay(3000);
 digitalWrite(green,HIGH);
 digitalWrite(red,LOW);
 delay(3000);
-digitalWrite(yellow,HIGH);
+digitalWrite(bleu,HIGH);
 digitalWrite(green,LOW);
 delay(1000);
 }
